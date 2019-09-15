@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Aviral Bhardwaj's Machine Learning App In Flask
+		</div>
+		<h2>Spam Detection For Youtube Comments</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">You just Entered A SPAM Text ,Try Another Word </h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">This Word Is Not a Spam </h2>
+	{% endif %}
+
+	</div>
+<h4>This Flask Application is working on Machine Learning Model which shows the youtube comment is spam or Not</h4>
+<h4>You can get this whole Code In my Github Account-->https://github.com/aviralb</h4>
+</body>
+</html>
