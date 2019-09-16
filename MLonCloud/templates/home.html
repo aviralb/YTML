@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aviral Bhardwaj's Machine Learning App In Flask</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="brandname">
+                Aviral Bhardwaj's Machine Learning App In Flask
+            </div>
+            <h2>Spam Detection For Youtube Comments</h2>
+
+        </div>
+    </header>
+
+    <div class="ml-container">
+
+        <form action="{{ url_for('predict')}}" method="POST">
+		<center>
+            <p>Enter Your Comment Here</p>
+            <!-- <input type="text" name="comment"/> -->
+            <textarea name="comment" rows="10" cols="70"></textarea>
+            <br />
+
+            <input type="submit" class="btn-info" value="predict">
+		</center>
+        </form>
+
+    </div>
+
+<h4>This Flask Application is working on Machine Learning Model which shows the youtube comment is spam or Not</h4>
+<h4>You can get this whole Code In my Github Account-->https://github.com/aviralb</h4>
+
+
+</body>
+
+</html>
